@@ -9,7 +9,7 @@ int main(void)
 int i;
 for (i = 0; i <= 9; i++)
 {
-puts("%i" , i);
+puts ("%i", i);
 }
 puts("\n");
 return (0);
