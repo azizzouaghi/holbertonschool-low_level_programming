@@ -5,12 +5,11 @@
 */
 int main(void)
 {
-int i;
-
-for (i = 48; i < 58; i++)
-putchar(i);
-for (i = 'a'; i <= 'f'; i++)
-putchar(i);
+int s;
+for (s = 48; s < 58; s++)
+putchar(s);
+for (s = 'a'; s <= 'f'; s++)
+putchar(s);
 putchar('\n');
 return (0);
 }
