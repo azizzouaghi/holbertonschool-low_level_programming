@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
-* main -
+* main - base 16
 * description: base 16
 * Return: always 0
 */
 int main(void)
 {
 int s;
-for (s = 48; s < 58; s++)
+for (s = 0; s <= 9; s++)
 putchar(s);
 for (s = 'a'; s <= 'f'; s++)
 putchar(s);
