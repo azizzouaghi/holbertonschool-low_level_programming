@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
-*
-* Return: 0
+* main -
+* description: base 16
+* Return: always 0
 */
 int main(void)
 {
