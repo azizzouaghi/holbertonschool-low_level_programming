@@ -6,11 +6,11 @@
 */
 int main(void)
 {
-int s;
+int s, n;
 for (s = 0; s <= 9; s++)
 putchar(s);
-for (s = 'a'; s <= 'f'; s++)
-putchar(s);
+for (n = 'a'; n <= 'f'; s++)
+putchar(n);
 putchar('\n');
 return (0);
 }
