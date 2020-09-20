@@ -3,17 +3,19 @@
 * main - all possible combinations of single-digit numbers
 *
 * Return: always 0
-*/int main(void)
+*/
+int main(void)
 {
-int om;
-for (om = '0'; om <= '9'; ++om)
+int a;
+
+for (a = '0'; a <= '9'; ++a)
 {
-if (om != '0')
+if (a != '0')
 {
 putchar(',');
 putchar(' ');
 }
-putchar(om);
+putchar(a);
 }
 
 putchar('\n');
