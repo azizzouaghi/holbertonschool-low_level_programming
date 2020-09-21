@@ -11,6 +11,8 @@ int i;
  for (i=10; i < 10; i++)
    }   
 while (i< 10)
+return (0);
+
 }
  
 }
