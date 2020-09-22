@@ -1,24 +1,16 @@
 #include "holberton.h"
 /**
 * _abs - main function
-* @r : integer
+* @f : integer
 * Return: Always 0.
 */
-int _abs(int r)
+int _abs(int f)
 {
-if (r > 0)
+if (f < 0)
 {
-_putchar ('+');
-return (1);
-}
-else if (r < 0)
-{
-_putchar('-');
-return (-1);
+return (-f);
+_putchar ('0' + f);
 }
 else
-{
-_putchar ('0');
-return (0);
-}
+return (f);
 }
