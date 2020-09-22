@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
-* main - check the code for Holberton School students.
+* print_alphabet - main function
 * description: prints the alphabet, in lowercasen
-* Return: Always 0.
+* Return: Always 0
 */
-void (void)
+void print_alphabet(void)
 {
 char c;
 for (c = 'a'; c <= 'z'; c++)
