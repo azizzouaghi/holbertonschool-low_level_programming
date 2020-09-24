@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _isgigit - check for gigit
+* _isdigit - check for gigit
 * @c : integer
 * Return: always 1 or 0
 */
