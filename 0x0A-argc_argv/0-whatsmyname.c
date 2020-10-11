@@ -2,7 +2,7 @@
 /**
 * main - desplay program name
 * @argc: counts number of arguments
-* @argv: vector of arguments
+* @argv: argumrnts vector
 * Return: 0
 */
 int main(int argc, char *argv[])
