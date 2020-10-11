@@ -2,7 +2,7 @@
 /**
 * main - main function
 * @argc: counts
-* @argv: array
+* @argv: ;
 * Return: 0
 */
 int main(int argc, char *argv[])
