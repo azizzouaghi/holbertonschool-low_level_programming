@@ -3,14 +3,14 @@
 * main - desplay program name
 * @argc: counts number of arguments
 * @argv: vector of arguments
-* return: 0
+* Return: 0
 */
-int main(int argc, char *argv[])    
+int main(int argc, char *argv[])
 {
 if (argc)
 {
-printf("%s",argv[0]);
+printf("%s", argv[0]);
 putchar('\n');
 }
-return 0;
+return (0);
 }
