@@ -1,14 +1,14 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
 * main - main function
-* @argc: 
-* @argv: 
+* @argc: int
+* @argv: char
 * Return: ;
 */
 int main(int argc, char *argv[])
 {
-if (argc != 3) 
+if (argc != 3)
 {
 printf("Error\n");
 return (1);
