@@ -1,8 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
 * main - entry point
-*@argc: counts
-*@argv: ;
+* @argc: counts
+* @argv: ;
 * Return: 0
 */
 int main(int argc, char *argv[])
