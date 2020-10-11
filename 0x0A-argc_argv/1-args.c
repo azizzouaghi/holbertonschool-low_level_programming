@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - entry point
+* main - main function
 * @argc: counts
 * @argv: ;
 * Return: 0
