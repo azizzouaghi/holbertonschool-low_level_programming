@@ -1,10 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
+#include <stdlib.h>
 /**
-* free_dog - function
-* @d: pointer
-* Return: 0
+*free_dog - function
+*@d: struc
+*Return: 0
 */
 void free_dog(dog_t *d)
 {
