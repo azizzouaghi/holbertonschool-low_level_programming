@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
-*free_dog - frees a dog structure
+*free_dog - function
 *@d: structure
-*Return: 0
+*Return: ;
 */
 void free_dog(dog_t *d)
 {
-if (d)
+if (d != NULL)
 {
 free(d->name);
 free(d->owner);
