@@ -1,7 +1,8 @@
-#include "dog.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include "dog.h"
 /**
-*new_dog - function
+**new_dog - function
 *@name: char
 *@age: float
 *@owner: char
@@ -10,26 +11,43 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *d;
-if (name || owner)
-return (0);
+int i, j;
+if (name == NULL || owner == NULL)
+return (NULL);
 d = malloc(sizeof(dog_t));
-if (d)
-return (0);
-d->name = malloc(sizeof(char) * (sizeof(name)));
-if (d->name)
+if (d == NULL)
+return (NULL);
+for (i = 0; name[i]; i++)
+{
+}
+i++;
+for (j = 0; owner[j]; j++)
+{
+}
+j++;
+d->name = malloc(sizeof(char) * i);
+if (d->name == NULL)
 {
 free(d);
-return (0);
+return (NULL);
 }
-d->owner = malloc(sizeof(char) * (sizeof(owner)));
-if (d->owner)
+d->owner = malloc(sizeof(char) * j);
+if (d->owner == NULL)
 {
 free(d->name);
 free(d);
-return (0);
+return (NULL);
 }
-d->name = name;
-d->owner = owner;
+for (i = 0; name[i]; i++)
+{
+d->name[i] = name[i];
+}
+for (j = 0; owner[j]; j++)
+{
+d->owner[j] = owner[j];
+}
 d->age = age;
+d->name[i] = '\0';
+d->owner[j] = '\0';
 return (d);
 }
