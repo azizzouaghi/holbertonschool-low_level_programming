@@ -1,19 +1,23 @@
 #include <stdio.h>
 #include "lists.h"
+#include <stdlib.h>
 /**
-* listint_len - returns the number of elements in a linked list
-*@h: pointer
-*Return: nodes
+*add_nodeint -  adds a new node at the beginning of a listint_t list
+*@head: head of list
+*@n: pointer
+*Return: address
 */
-size_t listint_len(const listint_t *h)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-const listint_t *temp;
-int i = 0;
-temp = h;
-while (temp)
+listint_t *newnode;
+if (head != NULL)
 {
-i++;
-temp = temp->next;
+newnode = malloc(sizeof(listint_t));
+newnode->n = n;
+newnode->next = *head;
+*head = newnode;
+return (newnode);
 }
-return (i);
+else
+return (NULL);
 }
