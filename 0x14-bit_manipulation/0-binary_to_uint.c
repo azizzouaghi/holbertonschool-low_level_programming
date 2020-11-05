@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
 *binary_to_uint - converts a binary number to an unsigned int
-*@b: string 
-*Return: binary to uint 
+*@b: string
+*Return: binary to uint
 */
 unsigned int binary_to_uint(const char *b)
 {
