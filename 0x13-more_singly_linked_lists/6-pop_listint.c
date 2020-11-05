@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
-* pop_listint - delete the head node
-*@head: pointer
+*pop_listint - deletes the head node
+*@head: head of list
 *Return: ;
 */
 int pop_listint(listint_t **head)
