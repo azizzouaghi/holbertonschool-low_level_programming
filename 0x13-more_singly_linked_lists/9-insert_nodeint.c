@@ -5,21 +5,21 @@
 *@idx: index
 *@n: int
 *@head: first node
-*Return: adreess
+*Return: address
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 unsigned int i = 0;
-listint_t *temp = *head;
-if (temp == NULL)
+listint_t *tmp = *head;
+if (tmp == NULL)
 {
 return (NULL);
 }
-while ((temp != NULL) && (idx != i))
+while ((tmp != NULL) && (idx != i))
 {
 i++;
-temp = temp->next;
+tmp = tmp->next;
 }
-temp->n = n;
-return (temp);
+tmp->n = n;
+return (tmp);
 }
