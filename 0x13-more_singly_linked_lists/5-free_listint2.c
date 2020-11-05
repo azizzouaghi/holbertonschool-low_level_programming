@@ -13,7 +13,7 @@ if (head == NULL)
 return;
 while (*head != NULL)
 {
-tempnode = *head;
+temp = *head;
 *head = temp->next;
 free(temp);
 }
