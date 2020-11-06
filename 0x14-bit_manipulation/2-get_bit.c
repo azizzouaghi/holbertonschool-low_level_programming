@@ -7,6 +7,11 @@
 */
 int get_bit(unsigned long int n, unsigned int index)
 {
-char bit = ((n >> index) & 1);
-return (bit);
+if (sizeof(n) * 8 < index)
+return (-1);
+n >>= index;
+if ((n & 1) == 1)
+return (1);
+else
+return (0);
 }
