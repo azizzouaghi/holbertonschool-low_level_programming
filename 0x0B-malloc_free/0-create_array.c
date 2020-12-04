@@ -5,29 +5,20 @@
 *create_array - creats an array of chars
 *@size: number of bytes to allocate
 *@c: char
-*Return: ;
+*Return: 0
 */
 char *create_array(unsigned int size, char c)
 {
-char *array;
-unsigned int i;
-i = 0;
+char *ar;
+unsigned int i = 0;
 if (size == 0)
 {
 return (NULL);
 }
-array = malloc(size * sizeof(char));
-if (i < size)
-{
-while (i < size)
-{
-array[i] = c;
-i++;
-}
-return (array);
-}
-else
-{
-return (0);
-}
+ar = malloc(size * sizeof(char));
+if (ar == NULL)
+return (NULL);
+for (i = 0; i < size; i++)
+ar[i] = c;
+return (ar);
 }
