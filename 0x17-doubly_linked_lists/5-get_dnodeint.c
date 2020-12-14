@@ -1,19 +1,19 @@
 #include "lists.h"
 /**
 *get_dnodeint_at_index - gets a node
-*@head: node
-*@index: node index
+*@head: pointer
+*@index: index
 *Return: ;
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-unsigned int iindex;
-iindex = 0;
+unsigned int myIndex;
+myIndex = 0;
 if (!head)
 return (NULL);
-while (iindex < index)
+while (myIndex < index)
 {
-index++;
+myIndex++;
 if (!head)
 return (NULL);
 head = head->next;
